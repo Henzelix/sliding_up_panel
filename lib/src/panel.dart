@@ -296,7 +296,7 @@ class _SlidingUpPanelState extends State<SlidingUpPanel>
                         width: MediaQuery.of(context).size.width,
 
                         //set color to null so that touch events pass through
-                        //to the body when the panel is closed, otherwise,
+                        //to the body when the panel is closed or hidden, otherwise,
                         //if a color exists, then touch events won't go through
                         color: _ac.value == 0.0 || _isPanelShown==false
                             ? null
