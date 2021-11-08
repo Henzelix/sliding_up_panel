@@ -298,7 +298,7 @@ class _SlidingUpPanelState extends State<SlidingUpPanel>
                         //set color to null so that touch events pass through
                         //to the body when the panel is closed, otherwise,
                         //if a color exists, then touch events won't go through
-                        color: _ac.value == 0.0
+                        color: _ac.value == 0.0 || _isPanelShown==false
                             ? null
                             : widget.backdropColor.withOpacity(
                                 widget.backdropOpacity * _ac.value),
